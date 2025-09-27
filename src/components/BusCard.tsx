@@ -43,7 +43,7 @@ export function BusCard({ bus }: BusCardProps) {
   const occupancyPercentage = (bus.occupancy / bus.capacity) * 100;
 
   return (
-    <Card className="shadow-bus-card hover:shadow-lg transition-shadow">
+    <Card className="shadow-bus-card hover:shadow-lg transition-all cursor-pointer active:scale-95 no-select">
       <CardHeader className="pb-3">
         <div className="flex items-center justify-between">
           <CardTitle className="text-lg font-bold">Bus {bus.id}</CardTitle>

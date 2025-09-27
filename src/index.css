@@ -50,6 +50,13 @@ All colors MUST be HSL.
     /* Shadows */
     --shadow-bus-card: 0 4px 12px hsl(210 100% 45% / 0.1);
     --shadow-status: 0 2px 8px hsl(120 60% 50% / 0.2);
+    
+    /* Mobile-specific */
+    --touch-target: 44px;
+    --safe-area-inset-top: env(safe-area-inset-top);
+    --safe-area-inset-bottom: env(safe-area-inset-bottom);
+    --safe-area-inset-left: env(safe-area-inset-left);
+    --safe-area-inset-right: env(safe-area-inset-right);
 
     --radius: 0.5rem;
 
@@ -116,5 +123,24 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    /* Handle safe areas for mobile */
+    padding-top: var(--safe-area-inset-top);
+    padding-bottom: var(--safe-area-inset-bottom);
+    padding-left: var(--safe-area-inset-left);
+    padding-right: var(--safe-area-inset-right);
+  }
+
+  /* Mobile touch improvements */
+  button, a, [role="button"] {
+    min-height: var(--touch-target);
+    min-width: var(--touch-target);
+  }
+
+  /* Disable text selection on mobile for better UX */
+  @media (max-width: 768px) {
+    .no-select {
+      -webkit-user-select: none;
+      user-select: none;
+    }
   }
 }

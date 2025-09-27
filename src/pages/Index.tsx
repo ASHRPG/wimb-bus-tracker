@@ -20,7 +20,7 @@ const Index = () => {
 
       {/* Quick Actions */}
       <div className="grid gap-6 md:grid-cols-3 max-w-4xl mx-auto">
-        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105">
+        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105 active:scale-95">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <MapPin className="h-5 w-5 text-primary" />
@@ -40,7 +40,7 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105">
+        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105 active:scale-95">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Search className="h-5 w-5 text-primary" />
@@ -60,7 +60,7 @@ const Index = () => {
           </CardContent>
         </Card>
 
-        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105">
+        <Card className="shadow-bus-card hover:shadow-lg transition-all hover:scale-105 active:scale-95">
           <CardHeader>
             <CardTitle className="flex items-center gap-2">
               <Clock className="h-5 w-5 text-primary" />
