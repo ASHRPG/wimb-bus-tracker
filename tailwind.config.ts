@@ -57,6 +57,20 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        status: {
+          "on-time": "hsl(var(--status-on-time))",
+          delayed: "hsl(var(--status-delayed))",
+          early: "hsl(var(--status-early))",
+          cancelled: "hsl(var(--status-cancelled))",
+        },
+      },
+      backgroundImage: {
+        "gradient-primary": "var(--gradient-primary)",
+        "gradient-status": "var(--gradient-status)",
+      },
+      boxShadow: {
+        "bus-card": "var(--shadow-bus-card)",
+        "status": "var(--shadow-status)",
       },
       borderRadius: {
         lg: "var(--radius)",
